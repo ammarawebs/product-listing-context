@@ -16,15 +16,11 @@ import Navbar from './components/Navbar';
 function App() {
 
   
-  const [isLoading , set_isLoading] = useState(true)
-
-  setTimeout(()=>{
-    set_isLoading(false)
-  },2000)
+ 
 
 
   return (
-    <React.Fragment>
+    <>
     
       {/* <Router> */}
         <Navbar/>
@@ -36,7 +32,7 @@ function App() {
       {/* </Router> */}
       {/* <HomePage/> */}
         
-    </React.Fragment>
+    </>
   );
 }
 
